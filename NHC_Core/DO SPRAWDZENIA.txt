@@ -1,0 +1,14 @@
+Rzeczy Do Sprawdzenia:
+- Border
+- spawn Vorder
+- cooldown Chat Command
+- tp On Resp
+- podczas WalkI Stawianie
+- god
+- obs 
+- Beacon
+- Luk
+- Refy
+- Clearlag
+- cx
+- pandory

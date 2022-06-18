@@ -1,0 +1,193 @@
+# ===================================================
+#
+# PLIK KONFIGURACYJNY
+# JESLI CHCESZ PUSTA LINIJKE TO UZYJ \n
+# true = tak
+# false = nie
+#
+# ====================================================
+
+messages:
+  color: "&7"
+  color-mark: "&9"
+  format: "&8[%M&lNomen&fHC&r&8] %C{MESSAGE}"
+  permissions: "&r&8» &cNie posiadasz permisji aby to zrobic!"
+  console: "Nie mozesz tego tutaj zrobic!"
+  poffline: "&r&8» &cTen gracz jest offline!"
+
+commands:
+  settings:
+    setvalue: "Pomyslnie ustawiono %M{VALUE} %Cjako domyslny!"
+  plugins: "&r&8» &7Lista pluginow &8(%M{COUNT}&8): %M{LIST}&8!"
+  help:
+    - "&r%M&lDostepne komendy: "
+    - "&r&8» %M/drop %C- ustawienia dropu"
+    - "&r&8» %M/depozyt %C- otwiera przenosny schowek!"
+    - "&r&8» %M/ustawienia %C- otwiera opcje!"
+  gm:
+    empty:
+      - "&r&l%MPoprawne uzycie: "
+      - "&r&8» %M/gamemode 0 &8[%Mgracz&8] %C- ustawia tryb gry na przetrwanie!"
+      - "&r&8» %M/gamemode 1 &8[%Mgracz&8] %C- ustawia tryb gry na kreatywny!"
+      - "&r&8» %M/gamemode 2 &8[%Mgracz&8] %C- ustawia tryb gry na przygodowy!"
+      - "&r&8» %M/gamemode 3 &8[%Mgracz&8] %C- ustawia tryb gry na widza!"
+    gamemode: "Pomyslnie ustawiono tryb gry na %M{TRYB}"
+    gamemodep: "Pomyslnie ustawiono tryb gry graczu %M{NAME}%C na %M{TRYB}"
+  whitelist:
+    empty:
+      - "&r&l%MPoprawne uzycie: "
+      - "&r&8» %M/whitelist add &8[%Mgracz&8] %C- dodaje gracza na biala liste!"
+      - "&r&8» %M/whitelist remove &8[%Mgracz&8] %C- usuwa gracza na biala liste!"
+      - "&r&8» %M/whitelist list %C- sprawdza liste graczy dodanych na biala liste!"
+      - "&r&8» %M/whitelist status %C- sprawdza status bialej listy!"
+      - "&r&8» %M/whitelist on %C- wlacza biala liste!"
+      - "&r&8» %M/whitelist off %C- wylacza biala liste!"
+      - "&r&8» %M/whitelist format &8[%Mformat&8] %C- ustawia format przy wyrzucaniu gracza!"
+    format:
+      ok: "Zmieniono format wiadomosci przy wyrzucaniu!"
+      usage: "Poprawne uzycie to: &6/whitelist format &8[&6format&8]"
+    status: "Whitelista jest aktualnie: %M{STATUS}"
+    on: "Whitelista zostala %MWLACZONA!"
+    off: "Whitelista zostala %MWYLACZONA!"
+    list: "Lista graczy dodanych na biala liste: %M{PLAYERS}"
+    add: "Ten gracz zostal juz dodany!"
+    added: "Gracz %M{NAME} &7zostal dodany na biala liste!"
+    addusage: "Uzycie to %M/whitelist add &8[%Mnick&8]"
+    donthave: "Tego gracza nie ma na bialej liscie!"
+    removep: "Gracz %M{NAME} &7zostal usuniety z bialej listy!"
+    removeuse: "Uzycie to %M/whitelist remove &8[%Mnick&8]"
+  ver:
+    server:
+      - "%M&lInformacje o serwerze:"
+      - "&r&8» %CNazwa: %M{NAME}"
+      - "&r&8» %CWersja: %M{VERSION}"
+      - "&r&8» %CApi: %M{API}"
+      - "&r&8» %CProtocol: %M{PROTOCOL}"
+    plugin:
+      - "%M&lInformacje o pluginie:"
+      - "&r&8» %CNazwa: %M{NAME}"
+      - "&r&8» %CAuthor: %M{AUTHOR}"
+      - "&r&8» %CWersja: %M{VERSION}"
+      - "&r&8» %CStrona: %M{WEBSITE}"
+      - "&r&8» %COpis: %M{DESC}"
+
+
+
+form:
+  settings:
+    label: "&r%MWybierz opcje ktore chcesz zmienic: "
+    title: "&r%M&lUSTAWIENIA"
+    text: "%MUI&8/%MGUI"
+  title: "&r&l%MDepozyt"
+
+  button:
+    koxy: "Koxy: &l%M{KOXY}&r"
+    refy: "Refy: &l%M{REFY}&r"
+    perly: "Perly &l%M{PERLY}&r"
+    dop: "%M&lDOPELNIJ DO LIMITU"
+
+deposit:
+  paid:
+    - "&r&l%MPomyslnie wyplacono: "
+    - "&8» %M{KOXY} %Ckoxow!"
+    - "&8» %M{REFY} %Crefow!"
+    - "&8» %M{PERLY} %Cperel!"
+
+  admin:
+    usage:
+      - "&r&l%MPoprawne uzycie: "
+      - "&8» %M/admindeposit sprawdz &8- %Csprawdza depozyt gracza"
+      - "&8» %M/admindeposit dodaj &8- &7dodaje itemy do depozytu graczowi"
+      - "&8» %M/admindeposit usun &8- &7usuwa item z depozytu graczowi"
+      - "&8» %M/admindeposit ustaw &8- %Custawia depozyt gracza"
+
+
+    offline: "Ten gracz jest %Moffline%C!"
+
+    result:
+      - "&l%MDepozyt gracza {NICK}"
+      - "&8» %CPosiada: %M{KOXY} %Ckoxow!"
+      - "&8» %CPosiada: %M{REFY} %Crefow!"
+      - "&8» %CPosiada: %M{PERLY} %Cperel!"
+
+    sprawdz:
+      usage: "%CUzycie %M/admindeposit &8[%Msprawdz&8] [%Mnick&8]"
+
+    set:
+      usage: "%CUzycie %M/admindeposit add &8(%Mnick&8) (%Mkoxy&8/%Mrefy&8/%Mperly&8) (%Milosc&8)"
+
+      succes:
+        koxy: "%CPomyslnie ustawiono %M&l{KOXY}&r%C koxy graczowi &l%M{NICK}"
+        refy: "%CPomyslnie ustawiono %M&l{REFY}&r%C refy graczowi &l%M{NICK}"
+        perly: "%CPomyslnie ustawiono %M&l{PERLY}&r%C perly graczowi &l%M{NICK}"
+
+    add:
+      usage: "%CUzycie %M/admindeposit dodaj &8(%Mnick&8) (%Mkoxy&8/%Mrefy&8/%Mperly&8) (%Milosc&8)"
+      succes:
+        koxy: "%CDodano %M&l{KOXY}&r%C koxy graczowi &l%M{NICK}"
+        refy: "%CDodano %M&l{REFY}&r%C refy graczowi &l%M{NICK}"
+        perly: "%CDodano %M&l{PERLY}&r%C perly graczowi &l%M{NICK}"
+
+    remove:
+      usage: "%CUzycie %M/admindeposit usun &8(%Mnick&8) (%Mkoxy&8/%Mrefy&8/%Mperly&8) (%Milosc&8)"
+      succes:
+        koxy: "%CUsunieto %M&l{KOXY}&r%C koxy graczowi &l%M{NICK}"
+        refy: "%CUsunieto %M&l{REFY}&r%C refy graczowi &l%M{NICK}"
+        perly: "%CUsunieto %M&l{PERLY}&r%C perly graczowi &l%M{NICK}"
+
+  limits:
+    koxy: "2"
+    refy: "12"
+    perly: "3"
+
+  messages:
+    koxy:
+      lack: "Nie posiadasz %Mkoxow %Caby wyplacic!"
+      limit: "Twoj nadmiar koxow zostal przeniesiony do %Mdepozytu%C!"
+    refy:
+      lack: "Nie posiadasz %Mrefow %Caby wyplacic!"
+      limit: "Twoj nadmiar refow zostal przeniesiony do %Mdepozytu%C!"
+    perly:
+      lack: "Nie posiadasz %Mperel %Caby wyplacic!"
+      limit: "Twoj nadmiar perel zostal przeniesiony do %Mdepozytu%C!"
+clearlag:
+  msg: "&l%MBOT &r&8» &7{MESSAGE}"
+  automsg:
+    - "Czy wiedziales ze pod %M/ustawienia %Cmozesz zmienic %MUI&8/%MGUI%C?"
+    - "To jest %M1 %Cwersja %Mcore%C!"
+    - "Author %MCore %Cto %Mfireq%C!"
+  time: "30"
+join:
+  text: "&r\n&r%C&r&8» %CWitaj %M{NAME} %Cna serwerze! \n&r%C&r&8» %CWejdz w ustawienia i zarzadzaj %MUI/GUI %Coraz innymi opcjami!&r\n &r\n&r \n &r\n &r\n&r"
+  button1: "&r%C&r&8» %MUstawienia"
+  title: "&r%M&lWitaj na serwerze!"
+
+gui:
+  deposit:
+    title: "&r%M&lDepozyt"
+    namekoxy: "&r%CKoxy: %M{KOXY}"
+    namerefy: "&r%CRefy: %M{REFY}"
+    nameperly: "&r%CPerly: %M{PERLY}"
+    totem: "&r%MDopelnij do limitu"
+    lorekoxy:
+      - "&8» &r%CKliknij %MLPM %Caby wyplacic!"
+    lorerefy:
+      - "&8» &r%CKliknij %MLPM %Caby wyplacic!"
+    loreperly:
+      - "&8» &r%CKliknij %MLPM %Caby wyplacic!"
+    totemlore:
+      - "&8» &r%CKliknij %MLPM %Caby dopelnic do limitu!"
+
+guilds:
+  create:
+    usage: "Poprawne uzycie to %M/zaloz &8[%MTAG&8]"
+    create: "&r&8» %CGracz {NAME} zalozyl gildie %M{GUILD}%C!"
+    haveg:
+      - "&r&8» %CJuz posiadasz gildie!"
+      - "&r&8» %CAby zalozyc gildie wpisz %M/usun %Ca nastepnie zaloz"
+  delete:
+    usage: "Poprawne uzycie to %M/usun &8[%MTAG&8]"
+    delete: "&r&8» %CGracz {NAME} usunal gildie %M{GUILD}%C!"
+    donthaveg:
+      - "&r&8» %CNie posiadasz gildii!"
+    errortag: "%CNie jestes w tej gildii!"

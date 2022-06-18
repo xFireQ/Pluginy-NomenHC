@@ -1,0 +1,130 @@
+---
+groups:
+  gracz:
+    rank: 0
+    parents: []
+    permissions:
+    - NomenHC.drop.gracz
+    format: '&8[&f{PKT}&8] &8[&c{GUILD}&8] &7{DISPLAYNAME}&8: &f{MESSAGE}'
+    default: true
+  vip:
+    rank: 1
+    parents: []
+    permissions:
+    - NomenHC.drop.vip
+    - NomenHC.kits.vip
+    - NomenHC.repair.command
+    - NomenHC.plecak.all
+    - NomenHC.gildie.vip
+    format: '&8[&f{PKT}&8] &8[&c{GUILD}&8] [&eVIP&8] &7{DISPLAYNAME}&8: &e{MESSAGE}'
+  svip:
+    rank: 2
+    parents: []
+    permissions:
+    - NomenHC.drop.svip
+    - NomenHC.kits.svip
+    - NomenHC.kits.vip
+    - NomenHC.plecak.all
+    - NomenHC.repair.command
+    - NomenHC.gildie.svip
+    format: '&8[&f{PKT}&8] &8[&c{GUILD}&8] [&6SVIP&8] &7{DISPLAYNAME}&8: &6{MESSAGE}'
+  sponsor:
+    rank: 3
+    parents: []
+    permissions:
+    - NomenHC.kits.sponsor
+    - NomenHC.drop.sponsor
+    - NomenHC.kits.vip
+    - NomenHC.repair.command
+    - NomenHC.plecak.all
+    - NomenHC.kits.svip
+    - NomenHC.gildie.sponsor
+    format: '&8[&f{PKT}&8] &8[&c{GUILD}&8] [&bSPONSOR&8] &7{DISPLAYNAME}&8: &b{MESSAGE}'
+  yt:
+    rank: 1
+    parents: []
+    permissions:
+    - NomenHC.kits.yt
+    - NomenHC.repair.command
+    - NomenHC.drop.vip
+    - NomenHC.plecak.all
+    format: '&8[&f{PKT}&8] &8[&c{GUILD}&8] [&fY&cT&8] &7{DISPLAYNAME}&8: &f{MESSAGE}'
+  yt+:
+    rank: 2
+    parents: []
+    permissions:
+    - NomenHC.kits.ytp
+    - NomenHC.drop.svip
+    - NomenHC.repair.command
+    - NomenHC.kits.yt
+    - NomenHC.plecak.all
+    format: '&8[&f{PKT}&8] &8[&c{GUILD}&8] [&fY&cT+&8] &7{DISPLAYNAME}&8: &f{MESSAGE}'
+  moderator:
+    rank: 4
+    parents:
+      - sponsor
+    permissions:
+    - pocketmine.command.gamemode
+    - pocketmine.command.time
+    - pocketmine.command.teleport
+    - NomenHC.chat.command
+    - NomenHC.clear.command
+    - NomenHC.fly.command
+    - NomenHC.god.command
+    - NomenHC.heal.command
+    - NomenHC.mute.command
+    - pocketmine.command.give
+    - pocketmine.command.effect 
+    - NomenHC.size.command
+    - NomenHC.ban.command
+    - NomenHC.clearlag.command
+    - NomenHC.kick.command
+    - NomenHC.premium.command
+    - NomenHC.sprawdzanie.command
+    - NomenHC.unban.command
+    - NomenHC.chat.spam
+    - NomenHC.command.cd
+    - NomenHC.ban-ip.command
+    - NomenHC.unban.command
+    - NomenHC.tempban.command
+    - NomenHC.sprawdzanie.command
+    - NomenHC.command.gamemode
+    - NomenHC.helpop
+    - NomemHC.chat.spam
+    format: '&l&aMOD &r&7{DISPLAYNAME}&8: &a{MESSAGE}'
+  admin:
+    rank: 5
+    parents: []
+    permissions: []
+    format: '&cADMIN &r&7{DISPLAYNAME}&8: &c{MESSAGE}'
+  headadmin:
+    rank: 6
+    parents: []
+    permissions: []
+    format: '&l&4HEADADMIN &r&7{DISPLAYNAME}&8: &4{MESSAGE}'
+  root:
+    rank: 7
+    parents: []
+    permissions: []
+    format: '&l&4ROOT &r&7{DISPLAYNAME}&8: &4{MESSAGE}'
+  support:
+    rank: 3
+    parents:
+      - sponsor
+    permissions:
+    - NomenHC.chat.command
+    - NomenHC.clear.command
+    - NomenHC.fly.command
+    - NomenHC.god.command
+    - NomenHC.heal.command
+    - NomenHC.mute.command
+    - NomenHC.size.command
+    - pocketmine.command.time
+    - pocketmine.command.teleport
+    - NomenHC.chat.spam
+    - NomenHC.chat
+    - NomenHC.command.cd
+    - NomenHC.mute.command
+    - NomenHC.kick.command
+    format: '&l&9Support &r&7{DISPLAYNAME}&8: &9{MESSAGE}'
+...

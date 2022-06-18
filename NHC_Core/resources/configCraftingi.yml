@@ -1,0 +1,63 @@
+craftingi:
+  stonegen1:
+    items:
+      - "STONE"
+      - "STONE"
+      - "STONE"
+      - "STONE"
+      - "IRON_INGOT"
+      - "STONE"
+      - "STONE"
+      - "STONE"
+      - "STONE"
+    result: "END_STONE;§r§3Stoniarka§b 3s"
+  stonegen2:
+    items:
+      - "STONE"
+      - "STONE"
+      - "STONE"
+      - "STONE"
+      - "EMERALD"
+      - "STONE"
+      - "STONE"
+      - "STONE"
+      - "STONE"
+    result: "END_STONE;§r§3Stoniarka§b 2s"
+  stonegen3:
+    items:
+      - "STONE"
+      - "STONE"
+      - "STONE"
+      - "STONE"
+      - "DIAMOND"
+      - "STONE"
+      - "STONE"
+      - "STONE"
+      - "STONE"
+    result: "END_STONE;§r§3Stoniarka§b 1s"
+  boyfarmer:
+    items:
+      - "OBSIDIAN"
+      - "OBSIDIAN"
+      - "OBSIDIAN"
+      - "OBSIDIAN"
+      - "EMERALD"
+      - "OBSIDIAN"
+      - "OBSIDIAN"
+      - "OBSIDIAN"
+      - "OBSIDIAN"
+    result: "OBSIDIAN;§r§6BoyFarmer"
+  kopacz:
+    items:
+      - "OBSIDIAN"
+      - "OBSIDIAN"
+      - "OBSIDIAN"
+      - "OBSIDIAN"
+      - "DIAMOND"
+      - "OBSIDIAN"
+      - "OBSIDIAN"
+      - "OBSIDIAN"
+      - "OBSIDIAN"
+    result: "STONE;§r§6KopaczFosy"
+
+  

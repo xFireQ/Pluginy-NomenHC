@@ -1,0 +1,5 @@
+main: Core\Main
+name: NHC_Core
+api: 4.2.0
+version: 2.0.8
+author: Fireq
